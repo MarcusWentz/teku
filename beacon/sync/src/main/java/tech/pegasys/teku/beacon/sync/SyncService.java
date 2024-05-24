@@ -22,6 +22,7 @@ import tech.pegasys.teku.infrastructure.async.SafeFuture;
 import tech.pegasys.teku.statetransition.forkchoice.ForkChoice.OptimisticHeadSubscriber;
 
 public interface SyncService extends SyncStateProvider {
+  //Modify start() inside the imported SafeFuture to delay sync?
   SafeFuture<?> start();
 
   SafeFuture<?> stop();
